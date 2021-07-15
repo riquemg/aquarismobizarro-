@@ -1,0 +1,361 @@
+<html>
+
+   <head>
+      <link rel="icon" type="image/ico" href="img/aquarismo_bizarro.ico"/-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link href="css/ab.css" rel="stylesheet">
+
+      <meta name="viewport" content="width=device-width, initial-scale=0.8, minimum-scale=0.8">
+   </head>
+
+   <body>
+      <div class="container-fluid">
+         <div class="col-sm-8 col-xl-4 mx-auto text-center">
+            <div class="header-title">
+               <h1 class="wv-heading--title">
+                  <i class="fa fa-envira text-success"></i>
+               </h1>
+               <h2 class="wv-heading--subtitle">
+                  Fertilização Bizarra
+               </h2>
+               <h3>
+                  fertilização com linha SEACHEM, por <a href="http://instagram.com/aquarismobizarro" target="blank">@aquarismobizarro</a>
+               </h3>
+               <h2>
+                  <a class="text-success" href="https://open.spotify.com/show/3d1PBVBQpVCFipXuQBXAih" target="_blank"><i class="fa fa-spotify p-3"></i></a>
+                  <a class="text-danger" href="https://www.youtube.com/channel/UCWu_wIVJwiEMT-RZUree_Pw" target="_blank"><i class="fa fa-youtube p-3"></i></a>
+                  <a class="text-secondary" href="https://www.instagram.com/aquarismobizarro/?hl=pt-br" target="_blank"><i class="fa fa-instagram p-3"></i></a>
+               </h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-8 col-xl-4 mx-auto">
+               <div class="myform form">
+                  <div class="form-group">
+                     <label for="litragem"><i class="fas fa-tint text-primary"></i> Litragem Real do Aquário</label>
+                     <input type="number" min="1" id="litragem" name="litragem" class="form-control my-input" id="litragem" onInput="calcular();" placeholder="Litragem de seu aquário">
+                  </div>
+                  <div class="form-group">
+                     <label for="demanda"><i class="far fa-lightbulb text-warning"></i> Demanda das Plantas</label>
+                     <select class="form-control" id="demanda" name="demanda" onInput="calcular();">
+                        <option value="baixa">Baixa</option>
+                        <option value="media">Média</option>
+                        <option value="alta">Alta</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <label for="massa"><i class="fab fa-pagelines text-success"></i> Massa</label>
+                     <select class="form-control" id="massa" name="massa" onInput="calcular();">
+                        <option value="poucas">Poucas plantas</option>
+                        <option value="muitas">Muitas plantas</option>
+                     </select>
+                  </div>
+                  <div class="col-md-12 ">
+                     <div class="login-or">
+                        <hr class="hr-or">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="col-sm-8 col-xl-4 mx-auto">
+               <div id="accordion">
+                  
+                  <!--Segunda-Feira-->
+                  <div class="card">
+                     <div class="card-header" id="headingOne">
+                        <h5 class="text-center">
+                           <button class="btn btn-link" data-toggle="collapse" data-target="#segunda" aria-expanded="true" aria-controls="segunda">Segunda-Feira</button>
+                        </h5>
+                     </div>
+                     <div id="segunda" class="collapse   " aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                           <table id="tabela_segunda" name="tabela_segunda" class="table">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">Fertilizante</th>
+                                    <th scope="col">Dose</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>Flourish</td>
+                                    <td></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Phosphorus</td>
+                                    <td></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Excel</td>
+                                    <td></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!--Terça-Feira-->
+                  <div class="card">
+                     <div class="card-header" id="headingOne">
+                        <h5 class="text-center">
+                           <button class="btn btn-link" data-toggle="collapse" data-target="#terca" aria-expanded="true" aria-controls="terca">Terça-Feira</button>
+                        </h5>
+                     </div>
+                     <div id="terca" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                        <table id="tabela_terca" name="tabela_segunda" class="table">
+                           <thead>
+                              <tr>
+                                 <th scope="col">Fertilizante</th>
+                                 <th scope="col">Dose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Iron</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Potassium</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Nitrogen</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Excel</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Trace</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Advance</td>
+                                 <td></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!--Quarta-Feira-->
+                  <div class="card">
+                     <div class="card-header" id="headingOne">
+                        <h5 class="text-center">
+                           <button class="btn btn-link" data-toggle="collapse" data-target="#quarta" aria-expanded="true" aria-controls="quarta">Quarta-Feira</button>
+                        </h5>
+                     </div>
+                     <div id="quarta" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                        <table id="tabela_quarta" name="tabela_segunda" class="table">
+                           <thead>
+                              <tr>
+                                 <th scope="col">Fertilizante</th>
+                                 <th scope="col">Dose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Flourish</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Phosphorus</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Excel</td>
+                                 <td></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!--Quinta-Feira-->
+                  <div class="card">
+                     <div class="card-header" id="headingOne">
+                        <h5 class="text-center">
+                           <button class="btn btn-link" data-toggle="collapse" data-target="#quinta" aria-expanded="true" aria-controls="quinta">Quinta-Feira</button>
+                        </h5>
+                     </div>
+                     <div id="quinta" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                        <table id="tabela_quinta" name="tabela_segunda" class="table">
+                           <thead>
+                              <tr>
+                                 <th scope="col">Fertilizante</th>
+                                 <th scope="col">Dose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Iron</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Potassium</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Nitrogen</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Excel</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Trace</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Advance</td>
+                                 <td></td>
+                              </tr>
+                           </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!--Sexta-Feira-->
+                  <div class="card">
+                     <div class="card-header" id="headingOne">
+                        <h5 class="text-center">
+                           <button class="btn btn-link" data-toggle="collapse" data-target="#sexta" aria-expanded="true" aria-controls="sexta">Sexta-Feira</button>
+                        </h5>
+                     </div>
+                     <div id="sexta" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                        <table id="tabela_sexta" name="tabela_segunda" class="table">
+                           <thead>
+                              <tr>
+                                 <th scope="col">Fertilizante</th>
+                                 <th scope="col">Dose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Flourish</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Phosphorus</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Excel</td>
+                                 <td></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!--Sábado-->
+                  <div class="card">
+                     <div class="card-header" id="headingOne">
+                        <h5 class="text-center">
+                           <button class="btn btn-link" data-toggle="collapse" data-target="#sabado" aria-expanded="true" aria-controls="sabado">Sábado</button>
+                        </h5>
+                     </div>
+                     <div id="sabado" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                        <table id="tabela_sabado" name="tabela_segunda" class="table">
+                           <thead>
+                              <tr>
+                                 <th scope="col">Fertilizante</th>
+                                 <th scope="col">Dose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Iron</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Potassium</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Nitrogen</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Excel</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Trace</td>
+                                 <td></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!--Domingo-->
+                  <div class="card">
+                     <div class="card-header" id="headingOne">
+                        <h5 class="text-center">
+                           <button class="btn btn-link" data-toggle="collapse" data-target="#domingo" aria-expanded="true" aria-controls="domingo">Domingo</button>
+                        </h5>
+                     </div>
+                     <div id="domingo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                        <table id="tabela_domingo" name="tabela_segunda" class="table">
+                           <thead>
+                              <tr>
+                                 <th scope="col">Fertilizante</th>
+                                 <th scope="col">Dose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Excel</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Advance</td>
+                                 <td></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+         
+         <div class="row">
+            <div class="col-sm-8 col-xl-4 mx-auto text-center">
+               <hr>
+               <p><a href="https://open.spotify.com/episode/6Iq0tJP8QUa68dT44oeUoN?si=frbR8JclQXeHUAljqxydCQ" target="_blank">metodologia do Aquarismo Bizarro</a><p>
+               <hr>
+               <p>Desenvolvido por <a href="mailto:henrique.mg.bh@gmail.com">henrique.mg.bh@gmail.com</a></p>
+            </div>
+         </div>
+
+      </div>
+   </body>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="https://kit.fontawesome.com/6c2f87df36.js" crossorigin="anonymous"></script>
+   <script src="js/fertilizacao.js"></script>
+
+</html>
